@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int r,b,p,q,res,red,blue;
+    scanf("%d %d %d %d",&r,&b,&p,&q);
+    red=r*p;
+    blue=b*q;
+    if(red>blue){
+        printf("%d",red);
+    }
+    else{
+        printf("%d",blue);
+    }
+    return 0;
+	// your code goes here
+
+}
