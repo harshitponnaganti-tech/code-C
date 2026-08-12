@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int X, Y, N;
+        scanf("%d %d %d", &X, &Y, &N);
+
+        int remaining = X - (Y * N);
+        
+        // If the remaining ice cream is less than 0, output 0
+        if (remaining < 0) {
+            printf("0\n");
+        } else {
+            printf("%d\n", remaining);
+        }
+    }
+
+    return 0;
+}
