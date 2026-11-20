@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    if (scanf("%d", &t) != 1) {
+        return 0;
+    }
+
+    while (t--) {
+        long long n, m;
+        scanf("%lld %lld", &n, &m);
+
+        long long online_scaled = 9 * n;
+        long long dining_scaled = 10 * m;
+
+        if (online_scaled < dining_scaled) {
+            printf("ONLINE\n");
+        } else if (online_scaled > dining_scaled) {
+            printf("DINING\n");
+        } else {
+            printf("EITHER\n");
+        }
+    }
+
+    return 0;
+}
